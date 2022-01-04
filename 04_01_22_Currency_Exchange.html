@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <table>
+        <tr>
+            <td style="text-align: center">Amount</td>
+            <td style="text-align: center">From Currency</td>
+            <td style="text-align: center">To Currency</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="in">
+            </td>
+            <td>
+                <label for="fromcurrency"></label>
+                <select name="fromcurrency" id="fromcurrency">
+                    <option value="1">Viet Nam Dong</option>
+                    <option value="2">US Dollar</option>
+                </select>
+            </td>
+            <td>
+                <label for="tocurrency"></label>
+                <select name="tocurrency" id="tocurrency">
+                    <option value="2">US Dollar</option>
+                    <option value="1">Viet Nam Dong</option>
+                </select>
+            </td>
+
+            <td><button type="button" onclick="convert()">
+                Exchange
+            </button>
+            </td>
+        </tr>
+    </table>
+    <p id="result"></p>
+<script src="04_01_22_Currency_Exchange.js"></script>
+</form>
+</body>
+</html>
